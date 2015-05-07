@@ -45,6 +45,26 @@ header {
     border-bottom: 1px solid #555555;
 }
 
+.services {
+    margin-top: 50px;
+}
+
+.service {
+    //background-color: red;
+}
+
+.service-header {
+    color: #222;
+    padding: 15px 0 4px;
+    font-size: 22px;
+}
+
+.service-body {
+    color: #777;
+    font-size:13px;
+    line-height: 23px;
+}
+
 
 /*
 html {
