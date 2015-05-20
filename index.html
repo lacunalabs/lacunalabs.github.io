@@ -6,13 +6,17 @@
     <title>Lacuna Labs</title>
     
     <link rel="stylesheet" href="css/foundation.css" />
+    
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.4.1/slick-theme.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-
     <script src="js/vendor/modernizr.js"></script>
 
   </head>
   <body>
   
+
+
    <header>
    <div class="row ">
     <div class="three columns">
@@ -30,6 +34,22 @@
     </div>
   </div>
   </header>
+
+
+   <div class="row">      
+      <div class="small-9 small-centered columns carousel">
+          <div style="background-image: url('cv1.png'); height: 300px; background-repeat: no-repeat; background-size: contain; background-position: center"></div>
+          <div style="background-image: url('cv2.jpg'); height: 300px; background-repeat: no-repeat; background-size: contain; background-position: center"></div>
+          <div style="background-image: url('cv3.jpg'); height: 300px; background-repeat: no-repeat; background-size: contain; background-position: center"></div>
+          
+        <!--
+        <div class="rect" style="background-image: url('cv1.png'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="rect" style="background-image: url('cv2.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+        <div class="rect" style="background-image: url('cv3.jpg'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>        
+        -->
+
+      </div>
+    </div>
 
    <div class="row">      
       <div class="small-9 small-centered columns infotext">
@@ -70,6 +90,8 @@
           </div>
         </div>        
     </div>
+
+
 
 <!--
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id pellentesque dui. Fusce eget molestie dui. Quisque pulvinar magna est, pharetra bibendum nibh rutrum a. Ut malesuada quam dolor, vitae pellentesque nunc tincidunt a. Nulla condimentum risus sed consequat molestie. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis pulvinar malesuada. Aenean sed tincidunt lorem. Donec laoreet, sapien molestie porta laoreet, risus sem luctus nisi, id facilisis libero arcu et diam. Vestibulum et sem sed risus interdum interdum a non mi. Sed aliquet tortor at tellus vulputate congue. Morbi quis tellus purus.. </br>
@@ -126,14 +148,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id pellentesque
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/stickyFooter.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
 
     <!-- Initialize JS Plugins -->
     <script src="js/app.js"></script>
-<!--
+
     <script>
-      $(document).foundation();      
+      $(document).ready(function() {
+        $('.carousel').slick({    
+            arrows: true           
+            //prevArrow: '.my-slick-prev',
+            //nextArrow: '.my-slick-next'
+            //fade: true
+            //dots: true
+        });
+      });
     </script>
-    -->
+
 
   </body>
 </html>

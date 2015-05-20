@@ -33,6 +33,8 @@ header li {
 header {
 	color: #fff;
 	background-color: #232323;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .infotext {
@@ -50,7 +52,7 @@ header {
 }
 
 .service {
-    //background-color: red;
+    /*background-color: red;*/
 }
 
 .service-header {
@@ -65,6 +67,27 @@ header {
     line-height: 23px;
 }
 
+.carousel {
+    padding-top: 50px;
+    -webkit-filter: drop-shadow(0 0 20px black);
+    filter: drop-shadow(0 0 20px black);
+    
+}
+
+
+.rect {
+    height: 300px;
+}
+
+.slick-next::before, .slick-prev::before {
+    font-size: 30px;
+}
+
+.top {
+    background-color: #232323;
+    height: 400px;
+    width: 100%;
+}
 
 /*
 html {
